@@ -1,0 +1,15 @@
+{
+  "name": "tab-image-downloader",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx rollup -c"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "rollup": "^2.79.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

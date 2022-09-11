@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "tab-image-downloader",
+	"version": "0.0.1",
+	"description": "Current window tab image download",
+	"icons": {
+    "48": "icons/border-48.png"
+  },
+	"background": {
+		"scripts": [
+			"main.js"
+		]
+	},
+	"permissions": [
+		"<all_urls>","contextMenus","tabs","downloads"
+	]
+}
