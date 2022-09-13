@@ -3,11 +3,13 @@ export function GetLastWord(sentence, split_word){
 }
 
 export function ImageDownload(url, file_name){
-  let option = {url: url};
-
-  if(file_name) {
-    option['filename'] = file_name;
-  }
+  // settings
+  const directory = "tab_image_downloader/";
+  let option = {
+    url: url,
+    filename: directory + file_name,
+    conflictAction: "overwrite" // settings
+  };
 
   let download = browser.downloads.download(option);
 

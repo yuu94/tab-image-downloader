@@ -1,5 +1,6 @@
 import { Success, Error } from "./errorHandler";
 
+
 export function is_true(url){
   return url.includes("mozilla");
 }
