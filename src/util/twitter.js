@@ -12,27 +12,18 @@ export function Update(tab){
   // settings 拡張子も?
   url.searchParams.set("name", "orig");
 
-  let updating = browser.tabs.update(
-    tab.id,
-    {url: url.toString()}
+  const fileName = GetLastWord(url.pathname, "/");
+  const format = url.searchParams.get("format");
+  const fullFileName = `${fileName}.${format}`;
+
+  const result = ImageDownload(
+    url.toString(),
+    fullFileName
   );
 
-  updating.then(() => {
-    const fileName = GetLastWord(url.pathname, "/");
-    const format = url.searchParams.get("format");
-    const fullFileName = `${fileName}.${format}`;
-
-    const result = ImageDownload(
-      url.toString(),
-      fullFileName
-    );
-
-    if(result) {
-      Success();
-    } else {
-      Error();
-    }
-  }, () => {
+  if(result) {
+    Success();
+  } else {
     Error();
-  });
+  }
 }
