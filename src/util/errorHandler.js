@@ -1,7 +1,7 @@
-export function Success(page_name){
-  console.log("Success: " + page_name);
+export function onStartedDownload(id){
+  console.log(`Started downloading: ${id}`);
 }
 
-export function Error(page_name) {
-  console.log("Error: " + page_name);
+export function onFailed(error) {
+  console.log(`Download failed: ${error}`);
 }
