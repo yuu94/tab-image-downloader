@@ -5,3 +5,8 @@ export function CreateMenue() {
     contexts: ["all", "tab"]
   });  
 }
+
+export function HandleClick() {
+  browser.runtime.openOptionsPage()
+  
+}
