@@ -14,8 +14,8 @@ export function Update(tab){
     {url: "https://www.mozilla.org/ja/about/"}
   );
   updating.then(() => {
-    Success();
+    Success("image");
   }, () => {
-    Error();
+    Error("image");
   });
 }

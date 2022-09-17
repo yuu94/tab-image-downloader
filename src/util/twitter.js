@@ -20,10 +20,11 @@ export function Update(tab){
     url.toString(),
     fullFileName
   );
+  console.log("tw res: " + result)
 
   if(result) {
-    Success();
+    Success("twitter");
   } else {
-    Error();
+    Error("twitter");
   }
 }
