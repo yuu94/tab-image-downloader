@@ -1,4 +1,3 @@
-import {Success, Error} from "./errorHandler.js";
 import { GetLastWord, ImageDownload } from "./util.js";
 
 
@@ -16,15 +15,5 @@ export function Update(tab){
   const format = url.searchParams.get("format");
   const fullFileName = `${fileName}.${format}`;
 
-  const result = ImageDownload(
-    url.toString(),
-    fullFileName
-  );
-  console.log("tw res: " + result)
-
-  if(result) {
-    Success("twitter");
-  } else {
-    Error("twitter");
-  }
+  ImageDownload(url.toString(), fullFileName);
 }
