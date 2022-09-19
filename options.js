@@ -1,4 +1,5 @@
 function saveOptions(e) {
+  console.log("innn")
   browser.storage.sync.set({
     colour: document.querySelector("#colour").value
   });

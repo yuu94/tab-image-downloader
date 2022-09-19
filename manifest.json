@@ -23,5 +23,10 @@
 	},
 	"permissions": [
 		"<all_urls>","contextMenus","tabs","downloads","storage"
-	]
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "addon@exsasmple.comm"
+		}
+	}
 }
