@@ -3,14 +3,53 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
   </head>
 
 <body>
   <p>storage.managed colour: <b id="managed-colour">no value found</b></p>
   <form>
+    <div>
       <label>Favourite colour</label>
       <input type="text" id="colour" >
+    </div>
+    <div>
       <button type="submit">Save</button>
+    </div>
+    
+  </form>
+  <h2>Setting</h2>
+  <form action="">
+    <div>
+      <label for="">Download directory</label>
+      <input type="text" id="dl-dir">
+    </div>
+    <div>
+      <label for="">上書き: </label>
+      <select name="" id="">
+        <option value="">overwrite</option>
+        <option value="">uniquify</option>
+        <option value="">prompt</option>
+      </select>
+    </div>
+    <div>
+      <button>Save</button>
+    </div>
+  </form>
+  <h2>Other</h2>
+  <b>Twitter</b>
+  <form action="">
+    <div>
+      <label for="">クオリティ: </label>
+      <select name="q" id="">
+        <option value="">Original</option>
+        <option value="">Large</option>
+        <option value="">Medium</option>
+        <option value="">Small</option>
+      </select>
+    </div>
+    
+    <button>Save</button>
   </form>
   <script src="options.js"></script>
 </body>
